@@ -1,16 +1,19 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from "react";
 
+function Greeting1() {
+  const [nume] = useState"Ionut";
+  return nume;
+}
+function Greeting2() {
+  let nume = "Ana";
+  return nume;
+}
 export default function App() {
-  const [currentValue, changeValue] = React.useState(0);
-
   return (
     <>
-      <button onClick={() => changeValue(currentValue + 1)}>+</button>
-      {currentValue}
-      <button onClick={() => changeValue(currentValue - 1)}>-</button>
-      {currentValue}
+      <Greeting1 />
+      <br />
+      <Greeting2 />
     </>
   );
 }
