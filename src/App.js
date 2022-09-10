@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Greeting1() {
-  const [nume] = useState"Ionut";
+  const [nume] = useState("Ionut");
   return nume;
 }
 function Greeting2() {
